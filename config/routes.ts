@@ -1,6 +1,4 @@
-﻿import path from "path";
-
-export default [
+﻿export default [
 	{
 		path: '/user',
 		layout: false,
@@ -47,6 +45,41 @@ export default [
 		path: '/question-bank',
 		name: 'Bai2',
 		component: './QuestionBank',
+	},
+
+	///////////////////////////////////
+	// LICH HEN - APPOINTMENT SCHEDULING SYSTEM
+	{
+		name: 'Quản lý Lịch Hẹn',
+		path: '/lich-hen',
+		icon: 'CalendarOutlined',
+		routes: [
+			{
+				name: 'Đặt Lịch Hẹn',
+				path: 'dat-lich',
+				component: './LichHen',
+			},
+			{
+				name: 'Quản lý Nhân Viên',
+				path: 'nhan-vien',
+				component: './NhanVien',
+			},
+			{
+				name: 'Quản lý Dịch Vụ',
+				path: 'dich-vu',
+				component: './DichVu',
+			},
+			{
+				name: 'Đánh Giá & Phản Hồi',
+				path: 'danh-gia',
+				component: './DanhGia',
+			},
+			{
+				name: 'Thống Kê & Báo Cáo',
+				path: 'thong-ke',
+				component: './ThongKe',
+			},
+		],
 	},
 
 	///////////////////////////////////
