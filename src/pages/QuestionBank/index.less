@@ -1,0 +1,30 @@
+@import '~antd/es/style/themes/default.less';
+@import '../../styles/_variable.less';
+
+.qb-root {
+  padding: 20px;
+  h2 { margin-bottom: 12px; }
+
+  .qb-menu { margin-bottom: 12px; display:flex; gap:8px; flex-wrap:wrap; }
+  .qb-menu button { margin: 0; padding: 8px 14px; border-radius: 6px; border: 1px solid #e6e6e6; background: #fff; cursor: pointer; transition: all .18s ease; }
+  .qb-menu button.active { background: @primary-color; color: #fff; border-color: darken(@primary-color, 6%); box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
+
+  .qb-panel { background: #fff; padding: 16px; border-radius: 10px; box-shadow: 0 6px 18px rgba(10,20,30,0.06); }
+
+  .row { display:flex; gap:8px; align-items:center; margin:12px 0; }
+  input, select, textarea { padding:10px; border:1px solid #eee; border-radius:6px; font-size:14px; }
+  input, select { min-width: 140px; }
+  textarea { width: 100%; min-height: 100px; resize:vertical; }
+
+  .template-row { display:flex; gap:8px; align-items:center; margin:8px 0; flex-wrap:wrap; }
+
+  ul { margin:12px 0; padding-left: 0; list-style: none; }
+  ul li { padding:10px; border-radius:6px; background: #fafafa; margin-bottom:8px; display:flex; justify-content:space-between; align-items:center; gap:12px; }
+
+  .qb-btn { padding:8px 12px; border-radius:6px; border:1px solid #ddd; background:#fff; cursor:pointer; transition:all .15s; }
+  .qb-btn:hover { transform:translateY(-1px); }
+  .qb-btn-primary { background: @primary-color; color: #fff; border-color: darken(@primary-color,6%); }
+  .qb-btn-danger { background: #ff4d4f; color:#fff; border-color: darken(#ff4d4f,6%); }
+
+  .edit-panel { margin-top:12px; padding:12px; border-radius:6px; background:#fffaf0; border:1px solid #fde3c7; }
+}
